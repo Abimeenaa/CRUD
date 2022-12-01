@@ -1,0 +1,18 @@
+.light-blue-gradient {
+    background: linear-gradient(120deg, #96e7d2 0%, #97d8f6 100%);
+}
+
+.blink {
+
+    background: linear-gradient(150deg, #96e7d2 0%, #97d8f6 100%);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    animation: both 3s linear infinite;
+    color: darkmagenta;
+    font-size: x-large;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
