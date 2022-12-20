@@ -3,8 +3,7 @@ include "connection.php";
 //include "Employeeregister.php";
 if (isset($_POST['login'])) {
     extract($_REQUEST);
-    // $sql= mysqli_query($connection,"SELECT * FROM employee where Email = '$Email' && password= '$password'");
-    // $result = mysqli_query($connection,$sql);
+   
     $sql = "SELECT * FROM employee where Email = '$Email' && password= '$password'";
     $result = mysqli_query($connection, $sql);
     if (mysqli_fetch_assoc($result) == true) {
